@@ -32,6 +32,9 @@ header {
   color: #ffffff;
   padding: 1rem;
 }
+header button {
+  display: none;
+}
 header div,
 header nav,
 main {
@@ -39,6 +42,7 @@ main {
   margin: 0 auto;
 }
 header div {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -61,10 +65,22 @@ header nav ul {
   justify-content: space-between;
   align-items: center;
 }
+header nav li {
+  flex: 1 1 0;
+  width: 100%;
+}
 header nav a {
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #ffffff;
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+header nav a:hover {
+  background-color: var(--hover);
 }
 main {
   padding: 1rem;
@@ -86,7 +102,7 @@ main section {
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
 }
 main section h2 {
-  padding: 1rem 0;
+  padding: 1rem;
   margin-bottom: 1rem;
   background-color: var(--accent-color);
   color: #ffffff;
@@ -136,4 +152,46 @@ footer {
   margin-top: 1rem;
   line-height: 2rem;
   font-size: 1rem;
+}
+
+@media only screen and (max-width: 35rem) {
+  body {
+    font-size: 14px;
+  }
+  header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  header button {
+    display: block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  header nav {
+    position: absolute;
+    top: calc(100% - 1rem);
+    right: 0;
+    width: 100%;
+  }
+  header nav ul {
+    overflow: hidden;
+    background-color: var(--accent-color);
+    flex-direction: column;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+  }
+  header nav ul.open {
+    max-height: 300px;
+  }
+  main {
+    display: block;
+  }
+  main section {
+    margin-bottom: 1rem;
+  }
 }
