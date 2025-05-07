@@ -2,11 +2,11 @@
   --bg-color: #f9f9f9;
   --primary-text: #1e1e1e;
   --secondary-text: #4f4f4f;
-  --accent-color: #0077cc;
+  --accent-color: #004080;
   --highlight-color: #2e7d32;
   --border-color: #e0e0e0;
   --card-bg-color: #ffffff;
-  --hover: #005fa3;
+  --hover: #0059b3;
 
   --poppins: "Poppins", sans-serif;
   --roboto: "Roboto", sans-serif;
@@ -130,7 +130,36 @@ main .country figcaption {
 main .certificates {
   grid-column: span 2;
 }
-main .certificates div {
+main .certificates .buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+main .certificates .buttons button {
+  color: var(--secondary-text);
+  background-color: var(--border-color);
+  border: 1px solid var(--border-color);
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+main .certificates .buttons button:not(.selected):hover {
+  background-color: #cccccc;
+}
+main .certificates .buttons button.selected {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+main .certificates #courses div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: var(--bg-color);
   color: var(--secondary-text);
   padding: 1rem;
@@ -140,9 +169,20 @@ main .certificates div {
   margin: 1rem;
   border-radius: 10px;
 }
-main .certificates div.completed {
+main .certificates #courses div.completed {
   background-color: var(--highlight-color);
   color: #ffffff;
+}
+main .certificates #courses {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+main .certificates > p {
+  text-align: right;
+  padding: 1rem;
+  font-weight: 500;
+  color: var(--secondary-text);
 }
 footer {
   background-color: var(--accent-color);

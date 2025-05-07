@@ -1,3 +1,2 @@
 document.getElementById("year").innerHTML = new Date().getFullYear();
-document.getElementById("lastModified").innerHTML =
-  document.lastModified.split(" ")[0];
+document.getElementById("lastModified").innerHTML = document.lastModified;
