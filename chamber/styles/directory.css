@@ -1,0 +1,78 @@
+:root {
+  /* Primary */
+  --deep-green: #006400;
+  --gold: #daa520;
+  -charcoal: #333333;
+
+  /* Accents */
+  --ivory: #f8f8f0;
+  --muted-terracotta: #cc6b5a;
+  --navy: #1a237e;
+
+  /* Background */
+  --sand: #f4efea;
+  --soft-green: #e5f2e0;
+
+  /* Fonts */
+  --playfair: "Playfair", serif;
+  --inter: "Inter", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--sand);
+  font-family: var(--inter);
+  color: var(--charcoal);
+}
+h1,
+h2,
+h3 {
+  font-family: var(--playfair);
+  margin: 0;
+}
+header {
+  background-color: var(--soft-green);
+}
+header > div {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+header .logo img {
+  width: 4rem;
+  height: auto;
+}
+header .logo h1 {
+  font-size: 1.5rem;
+  color: var(--deep-green);
+}
+header .logo p {
+  font-size: 0.8rem;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+header nav a {
+  text-decoration: none;
+  color: var(--navy);
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+header nav a:hover {
+  color: var(--deep-green);
+}
