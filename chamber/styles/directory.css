@@ -128,6 +128,41 @@ main .hero div {
   bottom: 3rem;
   right: 3rem;
 }
+main .home {
+  padding: 1rem;
+}
+main .home h1 {
+  font-size: 3rem;
+}
+main .home .grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+main .home .grid > div {
+  background-color: #ffffff;
+  padding-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+main .home .grid div h3 {
+  background-color: var(--deep-green);
+  color: #ffffff;
+  font-size: 2rem;
+  padding: 1rem;
+}
+main .home .grid div img {
+  width: 90%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
+main .home .grid ul {
+  list-style-type: none;
+  margin: 1rem 1rem 0;
+  line-height: 20px;
+}
 
 @media only screen and (max-width: 32rem) {
   header button {
@@ -157,5 +192,8 @@ main .hero div {
   main .hero div {
     bottom: 1rem;
     right: 1rem;
+  }
+  main .home .grid {
+    grid-template-columns: 1fr;
   }
 }
