@@ -85,6 +85,7 @@ header button {
   border: none;
   display: none;
   cursor: pointer;
+  padding: 1rem;
 }
 main {
   max-width: 1140px;
@@ -224,16 +225,23 @@ main .businesses .card span::before {
 main .businesses .list section {
   display: flex;
   gap: 1rem;
-  background-color: #ffffff;
   padding-bottom: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   padding: 1rem;
   margin-bottom: 1rem;
 }
+main .businesses .list section::before {
+  content: "📍";
+}
 main .businesses .list img {
   display: none;
+}
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 2rem 1rem;
+  background-color: var(--charcoal);
+  color: #ffffff;
 }
 
 @media only screen and (max-width: 32rem) {
@@ -252,6 +260,7 @@ main .businesses .list img {
     flex-direction: column;
     max-height: 0;
     overflow: hidden;
+    z-index: 10;
     transition: max-height 0.3s ease;
   }
   header nav ul.open {
@@ -267,5 +276,8 @@ main .businesses .list img {
   }
   main .home .grid {
     grid-template-columns: 1fr;
+  }
+  main .businesses .list section {
+    flex-direction: column;
   }
 }
