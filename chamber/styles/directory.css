@@ -179,8 +179,48 @@ main .businesses .btn button {
   border-radius: 8px;
   cursor: pointer;
   font-weight: 500;
+  margin-bottom: 2rem;
 }
-
+main .businesses .card {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+main .businesses .card section {
+  background-color: #ffffff;
+  padding-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+main .businesses .card h2 {
+  color: #ffffff;
+  background-color: var(--deep-green);
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem;
+}
+main .businesses .card img {
+  width: 90%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
+main .businesses .card p {
+  padding: 0 1rem;
+  margin-top: 0.8rem;
+  font-weight: 600;
+}
+main .businesses .card span {
+  display: block;
+  padding: 0 1rem;
+  margin-top: 0.8rem;
+  font-weight: 500;
+}
+main .businesses .card span::before {
+  content: "📍";
+  margin-right: 0.5rem;
+}
 @media only screen and (max-width: 32rem) {
   header button {
     display: block;

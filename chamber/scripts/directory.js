@@ -15,13 +15,21 @@ const cardContainer = document.getElementById("cardContainer");
 const listBtn = document.getElementById("list");
 const cardBtn = document.getElementById("card");
 
+cardBtn.addEventListener("click", () => {
+  cardContainer.classList.remove("list");
+  cardContainer.classList.add("card");
+});
+
+listBtn.addEventListener("click", () => {
+  cardContainer.classList.remove("card");
+  cardContainer.classList.add("list");
+});
+
 const getMembers = async () => {
   try {
     const response = await fetch("data/members.json");
     const data = await response.json();
     displayMembers(data);
-
-    console.log(data);
   } catch (error) {
     console.error(error);
   }
