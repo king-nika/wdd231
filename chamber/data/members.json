@@ -1,0 +1,113 @@
+[
+  {
+    "name": "FoodCo Nigeria Limited",
+    "address": "No. 1, Ring Road, Ibadan, Oyo State",
+    "phone": "+234-802-123-4567",
+    "website": "https://www.foodco.ng",
+    "imageUrl": "https://bovasgroup.com/wp-content/uploads/elementor/thumbs/partner_foodco-pzlv1mgyaik1mw6m67pkwna6suazzqf8rb6vd97oiw.webp",
+    "membershipLevel": 3,
+    "industry": "Retail & Supermarket",
+    "founded": 1982,
+    "description": "A leading retail supermarket chain offering groceries, electronics, and household items across Nigeria."
+  },
+  {
+    "name": "BOVAS & Company Limited",
+    "address": "Plot 7, Bovas Building, Ring Road, Ibadan, Oyo State",
+    "phone": "+234-803-234-5678",
+    "website": "https://www.bovasgroup.com",
+    "imageUrl": "https://bovasgroup.com/wp-content/uploads/2022/08/bovas-header-logo-medium-300x138.png",
+    "membershipLevel": 3,
+    "industry": "Oil & Gas",
+    "founded": 1980,
+    "description": "An indigenous oil and gas company involved in petroleum marketing and distribution."
+  },
+  {
+    "name": "African Newspapers of Nigeria Plc (Publishers of the Nigerian Tribune)",
+    "address": "Tribune House, Imalefalafia Street, Ibadan, Oyo State",
+    "phone": "+234-802-345-6789",
+    "website": "https://tribuneonlineng.com",
+    "imageUrl": "https://tribuneonlineng.com/wp-content/webp-express/webp-images/uploads/2023/02/Tribune-Online-Cropped-Logo-e1675299213489.png.webp",
+    "membershipLevel": 2,
+    "industry": "Media & Publishing",
+    "founded": 1949,
+    "description": "Publishers of the Nigerian Tribune, one of Nigeria's oldest newspapers."
+  },
+  {
+    "name": "Famous Ojays Nigeria Limited",
+    "address": "Plot 15, Oluyole Industrial Estate, Ibadan, Oyo State",
+    "phone": "+234-803-456-7890",
+    "website": "https://www.famousojays.com",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWYcv35uDsEMMrAS1sUsHy-4-Gkg_pJnl6Ug&s",
+    "membershipLevel": 2,
+    "industry": "Manufacturing",
+    "founded": 1995,
+    "description": "Manufacturers of quality plastic products and household items."
+  },
+  {
+    "name": "Process and Industrial Control Nigeria Limited",
+    "address": "No. 10, Industrial Layout, Ibadan, Oyo State",
+    "phone": "+234-802-567-8901",
+    "website": "https://www.picnigeria.com",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWYcv35uDsEMMrAS1sUsHy-4-Gkg_pJnl6Ug&s",
+    "membershipLevel": 2,
+    "industry": "Engineering Services",
+    "founded": 2000,
+    "description": "Provides process automation and control solutions for industrial applications."
+  },
+  {
+    "name": "Femtol Integrated Services",
+    "address": "Suite 5, Adegbite Plaza, Bodija, Ibadan, Oyo State",
+    "phone": "+234-803-678-9012",
+    "website": "https://www.femtolservices.com",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWYcv35uDsEMMrAS1sUsHy-4-Gkg_pJnl6Ug&s",
+    "membershipLevel": 1,
+    "industry": "Consulting",
+    "founded": 2010,
+    "description": "Offers business consulting and project management services to SMEs."
+  },
+  {
+    "name": "Boff & Company Insurance Brokers Limited",
+    "address": "No. 12, Insurance Street, Dugbe, Ibadan, Oyo State",
+    "phone": "+234-802-789-0123",
+    "website": "https://www.boffinsurance.com",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWYcv35uDsEMMrAS1sUsHy-4-Gkg_pJnl6Ug&s",
+    "membershipLevel": 2,
+    "industry": "Insurance",
+    "founded": 1992,
+    "description": "Provides comprehensive insurance brokerage services to individuals and businesses."
+  },
+  {
+    "name": "Edunet Integrated Services",
+    "address": "Block B, University of Ibadan, Ibadan, Oyo State",
+    "phone": "+234-803-890-1234",
+    "website": "https://www.edunetservices.com",
+    "image": "edunet_logo.png",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWYcv35uDsEMMrAS1sUsHy-4-Gkg_pJnl6Ug&s",
+    "membershipLevel": 1,
+    "industry": "Education Technology",
+    "founded": 2015,
+    "description": "Provides e-learning solutions and educational consultancy services."
+  },
+  {
+    "name": "NARL Consult",
+    "address": "Suite 8, Adekunle Plaza, Mokola, Ibadan, Oyo State",
+    "phone": "+234-802-901-2345",
+    "website": "https://www.narlconsult.com",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWYcv35uDsEMMrAS1sUsHy-4-Gkg_pJnl6Ug&s",
+    "membershipLevel": 1,
+    "industry": "Management Consulting",
+    "founded": 2008,
+    "description": "Specializes in business development and management consulting services."
+  },
+  {
+    "name": "Abanise Loluwa Nigeria Enterprises",
+    "address": "No. 5, Oke-Ado Road, Ibadan, Oyo State",
+    "phone": "+234-803-012-3456",
+    "website": "https://www.abaniseloluwa.com",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWYcv35uDsEMMrAS1sUsHy-4-Gkg_pJnl6Ug&s",
+    "membershipLevel": 1,
+    "industry": "Agriculture",
+    "founded": 2012,
+    "description": "Engaged in agricultural production and distribution of farm produce."
+  }
+]

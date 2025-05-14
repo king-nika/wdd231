@@ -2,7 +2,7 @@
   /* Primary */
   --deep-green: #006400;
   --gold: #daa520;
-  -charcoal: #333333;
+  --charcoal: #333333;
 
   /* Accents */
   --ivory: #f8f8f0;
@@ -133,6 +133,7 @@ main .home {
 }
 main .home h1 {
   font-size: 3rem;
+  margin: 2rem 0;
 }
 main .home .grid {
   display: grid;
@@ -162,6 +163,22 @@ main .home .grid ul {
   list-style-type: none;
   margin: 1rem 1rem 0;
   line-height: 20px;
+}
+main .businesses {
+  padding: 1rem;
+}
+main .businesses h1 {
+  font-size: 3rem;
+  margin: 2rem 0;
+}
+main .businesses .btn button {
+  padding: 0.5rem 1rem;
+  background-color: var(--navy);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
 }
 
 @media only screen and (max-width: 32rem) {
