@@ -51,6 +51,9 @@ const displayMembers = (members) => {
     name.textContent = member.name;
     logo.setAttribute("src", member.imageUrl);
     logo.setAttribute("alt", member.name);
+    logo.setAttribute("loading", "lazy");
+    logo.setAttribute("width", "200");
+    logo.setAttribute("height", "100");
     founded.textContent = `Founded: ${member.founded}`;
     location.textContent = member.address;
     description.textContent = member.description;

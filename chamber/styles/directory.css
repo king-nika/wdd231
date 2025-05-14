@@ -54,7 +54,8 @@ header .logo img {
   width: 4rem;
   height: auto;
 }
-header .logo h1 {
+header .logo span {
+  font-family: var(--playfair);
   font-size: 1.5rem;
   color: var(--deep-green);
 }
@@ -148,7 +149,7 @@ main .home .grid > div {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
-main .home .grid div h3 {
+main .home .grid div h2 {
   background-color: var(--deep-green);
   color: #ffffff;
   font-size: 2rem;
