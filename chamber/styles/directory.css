@@ -270,10 +270,22 @@ footer {
   main .hero h1 {
     font-size: 3rem;
     padding: 0.5rem;
+    z-index: 5;
   }
   main .hero div {
     bottom: 1rem;
     right: 1rem;
+  }
+  main .home h1,
+  main .businesses h1 {
+    font-size: 2rem;
+  }
+  main .home .grid div h2,
+  main .businesses section h2 {
+    font-size: 1.5rem;
+  }
+  main .businesses .card {
+    grid-template-columns: 1fr;
   }
   main .home .grid {
     grid-template-columns: 1fr;
