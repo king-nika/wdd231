@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Akingbayi Ojo">
-    <meta property="og:title" content="Ibadan Chamber of Commerce">
     <meta name="description"
-        content="Explore the official directory of the Ibadan Chamber of Commerce featuring trusted local businesses, professionals, and organizations driving economic growth and development in Ibadan.">
-    <meta property="og:image" content="./images/ibadan.webp">
-    <meta property="og:url" content="https://king-nika.github.io/wdd231/chamber/directory.html">
+        content="Discover how the Ibadan Chamber of Commerce empowers businesses, fosters economic growth, and connects professionals across all sectors in Ibadan and beyond.">
+    <meta property="og:title" content="Ibadan Chamber of Commerce">
+    <meta property="og:image" content="images/ibadan.webp">
+    <meta property="og:url" content="https://king-nika.github.io/wdd231/chamber/index.html">
     <meta property="og:description"
-        content="Browse the Ibadan Chamber of Commerce directory to find reputable businesses, service providers, and organizations supporting local economic development.">
-    <title>Ibadan Chamber of Commerce | Directory</title>
+        content="Discover how the Ibadan Chamber of Commerce empowers businesses, fosters economic growth, and connects professionals across all sectors in Ibadan and beyond.">
+    <title>Ibadan Chamber of Commerce</title>
 
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
@@ -50,8 +50,10 @@
     </header>
 
     <main>
-        <section class="hero">
+        <section class="hero-home">
             <h1>Ibadan Chamber of Commerce</h1>
+            <a href="#">Become a member Today</a>
+
             <img src="images/ibadan-small.webp" srcset="images/ibadan-small.webp 500w, images/ibadan.webp 800w"
                 sizes="(max-width: 600px) 500px, 800px" alt="Ibadan, Nigeria" width="800" height="534">
         </section>
@@ -68,16 +70,10 @@
                     <h2>Current Weather</h2>
 
                     <div>
-                        <img src="images/weather.webp" alt="Weather Icon" width="512" height="512" loading="lazy">
+                        <img id="weatherIcon" src="" alt="" width="512" height="512" loading="lazy">
 
-                        <ul>
-                            <li><strong>31</strong>°C</li>
-                            <li>Mostly Cloudy</li>
-                            <li>High: 31°</li>
-                            <li>Low: 23°</li>
-                            <li>Humidity: 75%</li>
-                            <li>Sunrise: 6:27 AM</li>
-                            <li>Sunset: 6:54 PM</li>
+                        <ul id="weatherList">
+                            <li><strong id="temp"></strong>°C</li>
                         </ul>
                     </div>
                 </div>
@@ -85,22 +81,15 @@
                 <div>
                     <h2>Weather Forecast</h2>
 
-                    <ul>
-                        <li>Today: <strong>31°C</strong></li>
-                        <li>Wednesday: <strong>33°C</strong></li>
-                        <li>Thursday: <strong>32°C</strong></li>
+                    <ul id="forecastList">
+                        <li>Today: <strong id="today"></strong>°C</li>
                     </ul>
                 </div>
             </div>
         </section>
 
         <section class="businesses">
-            <h1>Businesses</h1>
-
-            <div class="btn">
-                <button id="card">Card View</button>
-                <button id="list">List View</button>
-            </div>
+            <h1>Spotlight Businesses</h1>
 
             <div id="cardContainer" class="card"></div>
         </section>
@@ -111,7 +100,7 @@
         <p>Last Updated: <span id="lastModified"></span></p>
     </footer>
 
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/home.js" defer></script>
     <script src="scripts/footer.js" defer></script>
     <script src="scripts/menu.js"></script>
 </body>
