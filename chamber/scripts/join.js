@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const timestampInput = document.getElementById("timestamp");
-  timestampInput.value = new Date().toISOString();
+  const date = new Date();
+  timestampInput.value = `${date.toLocaleTimeString()} ${date.toLocaleDateString()}`;
 });
 
 const dialogBox = document.getElementById("dialogBox");
@@ -77,7 +78,7 @@ const displayModal = (membership) => {
   dialogBox.showModal();
 };
 
-const displayMembership = (membership) => {
+const displayMembership = (membership, index) => {
   const div = document.createElement("div");
   const title = document.createElement("h2");
   const button = document.createElement("button");
@@ -85,6 +86,7 @@ const displayMembership = (membership) => {
   title.textContent = membership.name;
   button.textContent = "Learn More";
   button.addEventListener("click", () => displayModal(membership));
+  div.style = "--i: " + (index + 1);
 
   div.appendChild(title);
   div.appendChild(button);
@@ -92,6 +94,6 @@ const displayMembership = (membership) => {
   membershipContainer.appendChild(div);
 };
 
-memberships.forEach((membership) => {
-  displayMembership(membership);
+memberships.forEach((membership, index) => {
+  displayMembership(membership, index);
 });

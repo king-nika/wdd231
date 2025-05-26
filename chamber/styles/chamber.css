@@ -342,6 +342,12 @@ main .membershipLevel div {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  animation: fadeIn 0.5s ease both;
+  animation-delay: calc(0.2s * var(--i));
+}
+main .membershipLevel h1 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
 }
 main .membershipLevel button {
   background-color: var(--gold);
@@ -401,12 +407,43 @@ main dialog ul {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+/* Thank you page */
+main.info {
+  padding: 1rem;
+}
+main.info h1 {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 3rem;
+}
+main.info span {
+  display: block;
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+main.info h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
 footer {
   text-align: center;
   font-size: 0.8rem;
   padding: 2rem 1rem;
   background-color: var(--charcoal);
   color: #ffffff;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @media only screen and (max-width: 32rem) {
