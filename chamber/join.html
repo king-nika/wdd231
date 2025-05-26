@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Akingbayi Ojo">
+    <meta name="description"
+        content="Join the Ibadan Chamber of Commerce and become part of a thriving network of professionals and businesses working together to drive growth and opportunity in Ibadan and beyond.">
+    <meta property="og:title" content="Ibadan Chamber of Commerce - Join Us">
+    <meta property="og:image" content="images/ibadan.webp">
+    <meta property="og:url" content="https://king-nika.github.io/wdd231/chamber/join.html">
+    <meta property="og:description"
+        content="Join the Ibadan Chamber of Commerce and become part of a thriving network of professionals and businesses working together to drive growth and opportunity in Ibadan and beyond.">
+    <title>Ibadan Chamber of Commerce | Join Us</title>
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Playfair:opsz,wght@5..1200,700&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div>
+            <div class="logo">
+                <img src="images/logo.webp" alt="Ibadan Chamber of Commerce" width="64" height="64" loading="lazy">
+
+                <div>
+                    <span>Ibadan Chamber of Commerce</span>
+                    <p>Resource hub for businesses in the city of Ibadan</p>
+                </div>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                </ul>
+            </nav>
+
+            <button class="menu" aria-label="Menu"></button>
+        </div>
+    </header>
+
+    <main class="main">
+        <form action="thankyou.html" method="get">
+            <h1>Join the Ibadan Chamber of Commerce</h1>
+
+            <label>
+                <span>First Name</span>
+                <input type="text" placeholder="John" required autocomplete="given-name" name="firstName"
+                    title="Enter your first name">
+            </label>
+
+            <label>
+                <span>Last Name</span>
+                <input type="text" placeholder="Doe" required autocomplete="family-name" name="lastName"
+                    title="Enter your last (family) name">
+            </label>
+
+            <label>
+                <span>Organisational title</span>
+                <input type="text" placeholder="Software Engineer" name="organisationTitle"
+                    title="Enter your organisational title (letters, hyphens, and spaces only, minimum 7 characters)"
+                    autocomplete="organization-title" pattern="[A-Za-z\- ]{7,}">
+            </label>
+
+            <label>
+                <span>Email</span>
+                <input type="email" placeholder="johndoe@example.com" required name="email"
+                    title="Enter your valid email address" autocomplete="email">
+            </label>
+
+            <label>
+                <span>Mobile Phone Number</span>
+                <input type="tel" name="mobile" placeholder="+234 123 4567 890" required name="tel"
+                    title="Enter your valid phone number" autocomplete="tel">
+            </label>
+
+            <label>
+                <span>Membership level</span>
+                <select name="membershipLevel" required>
+                    <option value="" disabled selected>Select your membership level</option>
+                    <option value="np">NP Membership is for non profit organizations and there is no fee.</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+            </label>
+
+            <label>
+                <span>Business Description</span>
+                <textarea name="businessDescription" required
+                    title="Enter a brief description of your business"></textarea>
+            </label>
+
+            <label>
+                <input type="hidden" name="timestamp" id="timestamp">
+            </label>
+
+            <input type="submit" value="Join Us">
+        </form>
+
+        <section class="membershipLevel" id="membershipLevel"></section>
+
+        <dialog id="dialogBox"></dialog>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> 🌐 Akingbayi Ojo 🌐 Nigeria 🇳🇬</p>
+        <p>Last Updated: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+</body>
+</html>
