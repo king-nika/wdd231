@@ -17,31 +17,49 @@ const courses = [
     name: "CSE 110: Introduction to Programming",
     completed: true,
     credits: 2,
+    technology: ["Python"],
+    description:
+      "An introduction to programming concepts and techniques using Python. Topics include variables, control structures, functions, and basic data structures.",
   },
   {
     name: "CSE 111: Programming with Functions",
     completed: true,
     credits: 2,
+    technology: ["Python"],
+    description:
+      "An introduction to programming concepts and techniques using Python. Topics include variables, control structures, functions, and basic data structures.",
   },
   {
     name: "CSE 210: Programming with Classes",
     completed: false,
     credits: 2,
+    technology: ["C Sharp(C#)"],
+    description:
+      "An introduction to object-oriented programming concepts using C#. Topics include classes, objects, inheritance, and polymorphism.",
   },
   {
     name: "WDD 130: Web Fundamentals",
     completed: true,
     credits: 2,
+    technology: ["HTML", "CSS"],
+    description:
+      "An introduction to web development concepts using HTML and CSS. Topics include page structure, styling, and responsive design.",
   },
   {
     name: "WDD 131: Dynamic Web Fundamentals",
     completed: true,
     credits: 2,
+    technology: ["HTML", "CSS", "JavaScript"],
+    description:
+      "An introduction to dynamic web development concepts using HTML, CSS, and JavaScript. Topics include client-side scripting, DOM manipulation, and event handling.",
   },
   {
     name: "WDD 231: Web Frontend Development",
     completed: false,
     credits: 2,
+    technology: ["HTML", "CSS", "JavaScript"],
+    description:
+      "An introduction to web development concepts using HTML, CSS, and JavaScript. Topics include page structure, styling, and responsive design.",
   },
 ];
 const coursesContainer = document.getElementById("courses");
@@ -62,6 +80,9 @@ const displayCourses = (course) => {
 
   div.appendChild(name);
   div.appendChild(credits);
+  div.addEventListener("click", () => {
+    displayCourseDetails(course);
+  });
 
   course.completed ? div.classList.add("completed") : null;
 
@@ -120,3 +141,23 @@ cseBtn.addEventListener("click", () => {
 
   creditsText.textContent = totalCredits + " credit(s)";
 });
+
+const courseDetails = document.getElementById("course-details");
+const displayCourseDetails = (course) => {
+  courseDetails.innerHTML = "";
+  courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.name}</h2>
+    <h3>${course.name.split(":")[1].trim()}</h3>
+    <p><strong>Credits:</strong> ${course.credits}</p>
+    <p><strong>Certificate:</strong> Web and Computer Programming</p>
+    <p>${course.description}</p>
+    <p><strong>Technology:</strong> ${course.technology.join(", ")}</p>
+  `;
+
+  courseDetails.showModal();
+  const closeModalBtn = document.getElementById("closeModal");
+  closeModalBtn.addEventListener("click", () => {
+    courseDetails.close();
+  });
+};
