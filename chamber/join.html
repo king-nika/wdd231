@@ -51,7 +51,7 @@
 
     <main class="main">
         <form action="thankyou.html" method="get">
-            <h1>Join the Ibadan Chamber of Commerce</h1>
+            <h1 fetchpriority="high">Join the Ibadan Chamber of Commerce</h1>
 
             <label>
                 <span>First Name</span>
@@ -82,6 +82,12 @@
                 <span>Mobile Phone Number</span>
                 <input type="tel" name="mobile" placeholder="+234 123 4567 890" required name="tel"
                     title="Enter your valid phone number" autocomplete="tel">
+            </label>
+
+            <label>
+                <span>Organisation Name</span>
+                <input type="text" placeholder="Your Organisation" required name="organisationName"
+                    title="Enter your organisation name" autocomplete="organization">
             </label>
 
             <label>

@@ -1,8 +1,6 @@
 const userInfo = new URLSearchParams(window.location.search);
-
-console.log(userInfo);
-
 const container = document.querySelector("main");
+
 container.innerHTML = `
     <h1>Congratulations ${userInfo.get("firstName")} ${userInfo.get(
   "lastName"
@@ -15,6 +13,9 @@ container.innerHTML = `
         <p><strong>Last Name:</strong> ${userInfo.get("lastName")}</p>
         <p><strong>Email:</strong> ${userInfo.get("email")}</p>
         <p><strong>Mobile:</strong> ${userInfo.get("mobile")}</p>
+        <p><strong>Organisation Name:</strong> ${userInfo.get(
+          "organisationName"
+        )}</p>
         <p><strong>Membership Level:</strong> ${userInfo.get(
           "membershipLevel"
         )}</p>
