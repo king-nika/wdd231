@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Recipe Collection - Delishbook site plan">
+    <meta name="author" content="Akingbayi Ojo">
+    <title>Personal Recipe Collection - Site Plan</title>
+
+    <!-- Preconnect for Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Preload stylesheet -->
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:wght@400..900&display=swap">
+
+    <!-- Load Google Fonts with font-display: swap -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:wght@400..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Inline Critical Font Styles for LCP Text -->
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+
+    <!-- External CSS (loaded after above-the-fold content) -->
+    <link rel="stylesheet" href="styles/siteplan.css">
+</head>
+<body>
+    <header>
+        <h1>Personal Recipe Collection: Site plan</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Site Name</h2>
+            <p>
+                <strong>DelishBook</strong> - This name was chosen because it combines "delicious" and "book,"
+                representing a curated collection of tasty recipes, much like a recipe notebook or digital cookbook.
+            </p>
+            <p>
+                <em>Optional domain: <span class="domainname">delishbook.net</span></em>
+            </p>
+        </section>
+
+        <section>
+            <h2>Site Purpose</h2>
+            <p fetchpriority="high">The purpose of the site is to provide users with a dynamic, interactive, and
+                accessible personal recipe
+                collection. It enables browsing curated recipes, viewing detailed information like ingredients and
+                preparation steps, and submitting new suggestions—all within a sleek, responsive interface.</p>
+        </section>
+
+        <section>
+            <h2>Scenarios</h2>
+            <ul>
+                <li>How can I quickly find a vegetarian or easy-to-make recipe from my personal collection?</li>
+                <li>Can I add a new recipe or mark one as a favorite so I can return to it later?</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Color Schema</h2>
+            <ul>
+                <li><strong>Dark Cerulean (#205375)</strong>: Used for headings, buttons, and emphasis.</li>
+                <li><strong>Deep Purple (#6a1b9a)</strong>: Used for highlights, accents, and section labels.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Typography</h2>
+            <ul>
+                <li>
+                    <strong>Playfair Display (serif):</strong> Used for headings to give a classy, elegant touch
+                    appropriate for food and recipe content
+                    .
+                </li>
+                <li>
+                    <strong>Open Sans (sans-serif):</strong> Used for body text to ensure clean, easy-to-read
+                    paragraphs
+                    and descriptions.
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Wireframe</h2>
+            <div class="wireframe">
+                <div class="frame">
+                    <div class="label">Mobile View</div>
+                    <p>[Logo]</p>
+                    <p>[Search Bar]</p>
+                    <p>[Recipe Cards List - Scrollable]</p>
+                    <p>[Navigation - Bottom Fixed]</p>
+                </div>
+                <div class="frame">
+                    <div class="label">Desktop View</div>
+                    <p>[Header with Logo + Navigation]</p>
+                    <p>[Sidebar Filters (e.g., Categories, Difficulty)]</p>
+                    <p>[Main Area with Recipe Grid]</p>
+                    <p>[Footer with Links and Contact]</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+</body>
+</html>
