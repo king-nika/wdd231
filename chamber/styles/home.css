@@ -1,0 +1,144 @@
+:root {
+  /* Primary */
+  --deep-green: #006400;
+  --gold: #daa520;
+  --charcoal: #333333;
+
+  /* Accents */
+  --ivory: #f8f8f0;
+  --muted-terracotta: #cc6b5a;
+  --navy: #1a237e;
+
+  /* Background */
+  --sand: #f4efea;
+  --soft-green: #e5f2e0;
+
+  /* Fonts */
+  --playfair: "Playfair", serif;
+  --inter: "Inter", sans-serif;
+}
+
+/* Home Page */
+main .hero-home {
+  position: relative;
+}
+main .hero-home::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  inset: 0;
+}
+main .hero-home img {
+  width: 100%;
+  height: auto;
+}
+main .hero-home h1 {
+  color: var(--gold);
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  text-align: center;
+  width: 100%;
+}
+main .hero-home a {
+  position: absolute;
+  text-decoration: none;
+  text-align: center;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0.5rem 1rem;
+  background-color: var(--deep-green);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  z-index: 10;
+}
+main .home .grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+main .home .grid > div {
+  background-color: #ffffff;
+  padding-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+main .home .grid div h2 {
+  background-color: var(--deep-green);
+  color: #ffffff;
+  font-size: 2rem;
+  padding: 1rem;
+}
+main .home .grid div img {
+  width: 90%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
+main .home .grid ul {
+  list-style-type: none;
+  margin: 1rem 1rem 0;
+  line-height: 20px;
+}
+main .businesses .card {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+main .businesses .card section {
+  background-color: #ffffff;
+  padding-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+main .businesses .card h2 {
+  color: #ffffff;
+  background-color: var(--deep-green);
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem;
+}
+main .businesses .card img {
+  width: 90%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
+main .businesses .card p {
+  padding: 0 1rem;
+  margin-top: 0.8rem;
+  font-weight: 600;
+}
+main .businesses .card span {
+  display: block;
+  padding: 0 1rem;
+  margin-top: 0.8rem;
+  font-weight: 500;
+}
+main .businesses .card span::before {
+  content: "📍";
+  margin-right: 0.5rem;
+}
+
+@media only screen and (max-width: 32rem) {
+  main .hero-home h1 {
+    font-size: 3rem;
+    padding: 0.5rem;
+    z-index: 5;
+  }
+  main .hero-home a {
+    padding: 0.5rem;
+    top: 85%;
+    font-size: 0.8rem;
+    z-index: 5;
+  }
+}

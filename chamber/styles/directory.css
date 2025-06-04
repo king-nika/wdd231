@@ -1,0 +1,141 @@
+/* Directory Page */
+main .hero {
+  position: relative;
+}
+main .hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+main .hero img {
+  width: 100%;
+  height: auto;
+}
+main .hero h1 {
+  position: absolute;
+  padding: 1rem;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--gold);
+  font-size: 5rem;
+  text-align: center;
+  z-index: 1;
+}
+main .home {
+  padding: 1rem;
+}
+main .home h1 {
+  font-size: 3rem;
+  margin: 2rem 0;
+}
+main .home .grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+main .home .grid > div {
+  background-color: #ffffff;
+  padding-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+main .home .grid div h2 {
+  background-color: var(--deep-green);
+  color: #ffffff;
+  font-size: 2rem;
+  padding: 1rem;
+}
+main .home .grid div img {
+  width: 90%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
+main .home .grid ul {
+  list-style-type: none;
+  margin: 1rem 1rem 0;
+  line-height: 20px;
+}
+main .home #forecastList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .businesses {
+  padding: 1rem;
+}
+main .businesses h1 {
+  font-size: 3rem;
+  margin: 2rem 0;
+}
+main .businesses .btn button {
+  padding: 0.5rem 1rem;
+  background-color: var(--navy);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+main .businesses .card {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+main .businesses .card section {
+  background-color: #ffffff;
+  padding-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+main .businesses .card h2 {
+  color: #ffffff;
+  background-color: var(--deep-green);
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem;
+}
+main .businesses .card img {
+  width: 90%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
+main .businesses .card p {
+  padding: 0 1rem;
+  margin-top: 0.8rem;
+  font-weight: 600;
+}
+main .businesses .card span {
+  display: block;
+  padding: 0 1rem;
+  margin-top: 0.8rem;
+  font-weight: 500;
+}
+main .businesses .card span::before {
+  content: "📍";
+  margin-right: 0.5rem;
+}
+main .businesses .list section {
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  overflow: hidden;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+main .businesses .list section::before {
+  content: "📍";
+}
+main .businesses .list img {
+  display: none;
+}
