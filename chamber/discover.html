@@ -6,17 +6,18 @@
     <meta name="author" content="Akingbayi Ojo">
     <meta property="og:title" content="Ibadan Chamber of Commerce">
     <meta name="description"
-        content="Explore the official directory of the Ibadan Chamber of Commerce featuring trusted local businesses, professionals, and organizations driving economic growth and development in Ibadan.">
+        content="Discover verified businesses, professionals, and organizations in Ibadan through the official Ibadan Chamber of Commerce directory—your trusted source for local economic connections and growth.">
     <meta property="og:image" content="./images/ibadan.webp">
-    <meta property="og:url" content="https://king-nika.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://king-nika.github.io/wdd231/chamber/discover.html">
     <meta property="og:description"
-        content="Browse the Ibadan Chamber of Commerce directory to find reputable businesses, service providers, and organizations supporting local economic development.">
-    <title>Ibadan Chamber of Commerce | Directory</title>
+        content="Discover verified businesses, professionals, and organizations in Ibadan through the official Ibadan Chamber of Commerce directory—your trusted source for local economic connections and growth.">
+    <title>Ibadan Chamber of Commerce | Discover</title>
 
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/discover.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,22 +51,11 @@
     </header>
 
     <main>
-        <section class="hero">
-            <h1>Ibadan Chamber of Commerce</h1>
-            <img src="images/ibadan-small.webp" srcset="images/ibadan-small.webp 500w, images/ibadan.webp 800w"
-                sizes="(max-width: 600px) 500px, 800px" alt="Ibadan, Nigeria" width="800" height="534">
-        </section>
+        <h1>Discover Ibadan's Best: Where Heritage Meets Opportunity</h1>
 
-        <section class="businesses">
-            <h1>Businesses</h1>
+        <div class="lastVisit"></div>
 
-            <div class="btn">
-                <button id="card">Card View</button>
-                <button id="list">List View</button>
-            </div>
-
-            <div id="cardContainer" class="card"></div>
-        </section>
+        <div class="discover" id="discover"></div>
     </main>
 
     <footer>
@@ -73,7 +63,7 @@
         <p>Last Updated: <span id="lastModified"></span></p>
     </footer>
 
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/discover.js" defer></script>
     <script src="scripts/footer.js" defer></script>
     <script src="scripts/menu.js" defer></script>
 </body>

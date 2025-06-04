@@ -91,6 +91,7 @@ header button {
 main {
   max-width: 1140px;
   margin: 0 auto;
+  padding: 1rem;
 }
 
 /* Home Page */
@@ -430,7 +431,6 @@ main.info p {
   font-size: 1.2rem;
   margin: 0.5rem 0;
 }
-
 footer {
   text-align: center;
   font-size: 0.8rem;

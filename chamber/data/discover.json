@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Cocoa House",
+    "description": "West Africa's first skyscraper and a symbol of Ibadan's economic strength. Built in 1965, it now houses businesses, the Odu'a Museum, and heritage gallery.",
+    "address": "Dugbe, Ibadan, Oyo State, Nigeria.",
+    "image": "cocoa-house.webp"
+  },
+  {
+    "name": "Agodi Gardens",
+    "description": "A serene public park with lush greenery, water features, a mini zoo, and recreational areas. Ideal for families and nature lovers.",
+    "address": "Parliament Road, Ibadan, Oyo State, Nigeria.",
+    "image": "agodi-gardens.webp"
+  },
+  {
+    "name": "UI Zoological Garden (University of Ibadan Zoo)",
+    "description": "A well-maintained zoo founded in 1948, home to lions, chimpanzees, birds, reptiles, and more. A top educational and leisure destination.",
+    "address": "University of Ibadan, Ibadan, Oyo State, Nigeria.",
+    "image": "ui-zoo.webp"
+  },
+  {
+    "name": "Bower's Tower",
+    "description": "A historic monument built in 1936 in honor of Captain Bower. It offers panoramic views of Ibadan from the top of Oke-Are Hill.",
+    "address": "Oke-Are, Ibadan North, Ibadan, Oyo State, Nigeria.",
+    "image": "bowers-tower.webp"
+  },
+  {
+    "name": "Mapo Hall",
+    "description": "A colonial-era structure built in 1929 that serves as Ibadan's city hall. It's a venue for cultural and civic events.",
+    "address": "Mapo Hill, Ibadan, Oyo State, Nigeria.",
+    "image": "mapo-hall.webp"
+  },
+  {
+    "name": "Ventura Mall",
+    "description": "A modern shopping and entertainment complex with a cinema, arcade, shops, and restaurants — a hub of leisure and retail activity.",
+    "address": "Sango-UI Road, Samonda, Ibadan, Oyo State, Nigeria.",
+    "image": "ventura.webp"
+  },
+  {
+    "name": "IITA Forest Reserve",
+    "description": "Located within the International Institute of Tropical Agriculture, this reserve is a biodiversity hotspot perfect for eco-tourism, bird watching, and research.",
+    "address": "IITA Campus, Moniya, Ibadan, Oyo State, Nigeria.",
+    "image": "iita.webp"
+  },
+  {
+    "name": "Wole Soyinka Arts Theatre (UI)",
+    "description": "Named after Nobel Laureate Wole Soyinka, this theatre hosts plays, musical performances, and cultural events, promoting arts and literature.",
+    "address": "University of Ibadan, Arts Complex, Ibadan, Oyo State, Nigeria.",
+    "image": "wole-arts.webp"
+  }
+]
