@@ -1,0 +1,114 @@
+:root {
+  --primary-color: #205375;
+  --accent-color: #6a1b9a;
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --neutral: #f4f4f4;
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Open Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--font-body);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  font-weight: 500;
+}
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+  color: var(--primary-color);
+}
+header section,
+main {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+header {
+  background-color: var(--primary-color);
+}
+header section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+header img {
+  width: 3rem;
+  height: auto;
+}
+header h1 {
+  color: #ffffff;
+  font-size: 2rem;
+}
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+header a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: block;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+header a:hover {
+  color: var(--primary-color);
+  background-color: #ffffff;
+}
+header button {
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+footer p {
+  text-align: center;
+  font-weight: 500;
+  color: #4a4a4a;
+  font-size: 0.8rem;
+  background-color: var(--neutral);
+  padding: 1rem 0;
+}
+
+@media only screen and (max-width: 32rem) {
+  header button {
+    display: block;
+  }
+  header h1 {
+    font-size: 1.5rem;
+  }
+  header section {
+    position: relative;
+  }
+  header ul {
+    flex-direction: column;
+    position: absolute;
+    background-color: var(--primary-color);
+    width: 100%;
+    left: 0;
+    top: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
+  header ul.open {
+    max-height: 300px;
+  }
+  header a,
+  header li {
+    width: 100%;
+  }
+}
