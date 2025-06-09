@@ -1,0 +1,115 @@
+:root {
+  --primary-color: #205375;
+  --accent-color: #6a1b9a;
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --neutral: #f4f4f4;
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Open Sans", sans-serif;
+}
+
+main .hero h1 {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 3rem;
+}
+main .hero p {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 2rem;
+}
+main .hero img {
+  display: block;
+  width: 90%;
+  height: auto;
+  margin: 4rem auto;
+  border-radius: 1rem;
+}
+main .feature {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .feature h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+main .feature p {
+  font-weight: 600;
+  max-width: 300px;
+}
+main .feature img {
+  display: block;
+  width: 400px;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+main .share {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 6rem 0;
+  margin: 4rem 0;
+}
+main .share::after,
+main .share::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #999999, transparent);
+  left: 0;
+}
+main .share::after {
+  top: 0;
+}
+main .share::before {
+  bottom: 0;
+}
+main .share h2 {
+  font-size: 2.8rem;
+}
+main .share a {
+  text-decoration: none;
+  background-color: var(--accent-color);
+  padding: 0.5rem 1rem;
+  color: #ffffff;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 32rem) {
+  main .hero h1 {
+    font-size: 2rem;
+  }
+  main .hero p {
+    font-size: 1.5rem;
+  }
+  main .hero img {
+    margin: 2rem auto 4rem;
+  }
+  main .feature {
+    margin-top: 3rem;
+    flex-direction: column-reverse;
+  }
+  main .feature h3 {
+    font-size: 1.2rem;
+  }
+  main .feature p {
+    font-size: 1rem;
+  }
+  main .feature img {
+    width: 100%;
+  }
+  main .browse {
+    flex-direction: column;
+  }
+}
