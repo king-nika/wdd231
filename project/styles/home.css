@@ -31,7 +31,7 @@ main .feature {
   justify-content: space-between;
   align-items: center;
 }
-main .feature h3 {
+main .feature h2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
@@ -84,6 +84,10 @@ main .share a {
   border-radius: 0.5rem;
   cursor: pointer;
   font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+main .share a:hover {
+  background-color: #4a0f6b;
 }
 
 @media only screen and (max-width: 32rem) {
@@ -100,7 +104,7 @@ main .share a {
     margin-top: 3rem;
     flex-direction: column-reverse;
   }
-  main .feature h3 {
+  main .feature h2 {
     font-size: 1.2rem;
   }
   main .feature p {

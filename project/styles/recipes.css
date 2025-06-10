@@ -1,0 +1,183 @@
+:root {
+  --primary-color: #205375;
+  --accent-color: #6a1b9a;
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --neutral: #f4f4f4;
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Open Sans", sans-serif;
+}
+
+main h1 {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 3rem;
+}
+main input {
+  display: block;
+  width: 100%;
+  outline: none;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  font-size: 1.1rem;
+  transition: border-color 0.3s ease;
+}
+main input:focus {
+  border-color: var(--accent-color);
+}
+main #loader {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+}
+main #loader::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid var(--accent-color);
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+main #recipes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  margin: 3rem 0;
+}
+main #recipes div {
+  border: 1px solid var(--border-color);
+  background-color: #ffffff;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+main #recipes div h2 {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  text-align: center;
+}
+main #recipes div img {
+  width: 100%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
+main #recipes div p {
+  font-size: 1.2rem;
+  padding: 0 1rem;
+}
+main #recipes div button {
+  display: block;
+  margin: 2rem auto 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--accent-color);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+main #recipes div button:hover {
+  background-color: #4a0f6b;
+}
+main dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 600px;
+  border: 1px solid var(--charcoal);
+  border-radius: 8px;
+  padding: 1rem;
+}
+main dialog button {
+  padding: 0.5rem 1rem;
+  background-color: var(--accent-color);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+main dialog button:hover {
+  background-color: #4a0f6b;
+}
+main button#closeModal {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+}
+main button#details {
+  display: block;
+  margin: 2rem auto 1rem;
+}
+main dialog h2 {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 2rem;
+  margin: 0;
+}
+main dialog img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 1rem 0;
+}
+main dialog p {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+main dialog span {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  display: block;
+  margin: 1rem 0 0;
+}
+main dialog ul {
+  list-style-type: none;
+  font-size: 1.2rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+main dialog li {
+  background-color: #f4f4f4;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  color: var(--primary-color);
+  font-weight: 600;
+  border: 1px solid var(--primary-color);
+}
+::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 32rem) {
+  h1 {
+    font-size: 2rem;
+  }
+}
