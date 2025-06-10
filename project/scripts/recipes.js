@@ -16,7 +16,6 @@ const loadRecipes = async (query = "") => {
     const response = await fetch(url);
     const data = await response.json();
 
-    console.log(data);
     displayRecipe(data.results);
   } catch (error) {
     recipesContainer.textContent =
