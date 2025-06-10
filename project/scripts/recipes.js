@@ -98,7 +98,7 @@ const displayModal = (recipe) => {
     .addEventListener("click", () => dialogBox.close());
 
   document.getElementById("details").addEventListener("click", () => {
-    localStorage.setItem("recipe", JSON.stringify(recipe.id));
+    localStorage.setItem("recipeId", JSON.stringify(recipe.id));
     window.location.href = "recipe.html";
   });
 };

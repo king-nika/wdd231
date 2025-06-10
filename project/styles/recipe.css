@@ -1,0 +1,84 @@
+:root {
+  --primary-color: #205375;
+  --accent-color: #6a1b9a;
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --neutral: #f4f4f4;
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Open Sans", sans-serif;
+}
+
+main #loader {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+}
+main #loader::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid var(--accent-color);
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+main h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 2rem 0;
+}
+main img {
+  display: block;
+  width: 90%;
+  max-width: 600px;
+  height: auto;
+  margin: 2rem auto;
+}
+main p {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+main span {
+  display: block;
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin: 1rem 0 0;
+}
+main ul {
+  font-size: 1.1rem;
+}
+main ul.tags {
+  list-style-type: none;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+main ul.tags li {
+  background-color: #f4f4f4;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  color: var(--primary-color);
+  font-weight: 600;
+  border: 1px solid var(--primary-color);
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 32rem) {
+  main h1 {
+    font-size: 2rem;
+  }
+}
