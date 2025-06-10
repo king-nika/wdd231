@@ -12,9 +12,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: var(--font-body);
 }
 body {
-  font-family: var(--font-body);
   color: var(--text-color);
   background-color: var(--background-color);
   font-weight: 500;

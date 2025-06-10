@@ -1,0 +1,40 @@
+:root {
+  --primary-color: #205375;
+  --accent-color: #6a1b9a;
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --neutral: #f4f4f4;
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Open Sans", sans-serif;
+}
+
+main h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+main p {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+main span {
+  display: block;
+  color: var(--primary-color);
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+main img {
+  display: block;
+  border-radius: 1rem;
+}
+main ol,
+main ul {
+  padding-left: 1rem;
+}
+
+@media only screen and (max-width: 32rem) {
+  main h1 {
+    font-size: 2rem;
+  }
+}

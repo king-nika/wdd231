@@ -1,0 +1,79 @@
+:root {
+  --primary-color: #205375;
+  --accent-color: #6a1b9a;
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --neutral: #f4f4f4;
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Open Sans", sans-serif;
+}
+
+main h1 {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 3rem;
+}
+main p {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 2rem;
+}
+main form {
+  background-color: var(--neutral);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+main form label {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+main form span {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+main form input,
+main form textarea {
+  outline: none;
+  border: 1.5px solid var(--text-color);
+  border-radius: 8px;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  transition: border-color 0.3s ease;
+}
+main form input:focus,
+main form textarea:focus {
+  border-color: var(--accent-color);
+}
+main form input[type="submit"] {
+  background-color: var(--accent-color);
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+}
+main form input[type="submit"]:hover {
+  background-color: #4a0f6b;
+}
+
+@media only screen and (max-width: 32rem) {
+  main h1 {
+    font-size: 2rem;
+  }
+  main p {
+    font-size: 1.5rem;
+  }
+  main form input,
+  main form textarea {
+    font-size: 1rem;
+  }
+}
