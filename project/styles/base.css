@@ -74,13 +74,14 @@ header button {
   cursor: pointer;
   display: none;
 }
-footer p {
+footer {
   text-align: center;
   font-weight: 500;
   color: #4a4a4a;
   font-size: 0.8rem;
   background-color: var(--neutral);
   padding: 1rem 0;
+  line-height: 2;
 }
 
 @media only screen and (max-width: 36rem) {
